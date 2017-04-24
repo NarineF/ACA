@@ -1,11 +1,14 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
+
 <suite name="QE ACA First Suite" configfailurepolicy="continue"
-    verbose="9" >
-  <test name="Test" preserve-order="true">
-    <classes>
-       <class name="selenium.MyFirstWedDriverTest" />
-    </classes>
-  </test>
-  </suite>
+	verbose="9">
+	<test name="Test" preserve-order="true">
+		<classes>
+			<!-- ay es class tag-ic araj a kanchvum, amen angam erb dzer class@ klini 
+				// MyFirstWebDriverTest-@, inq@ mi hat beforeClass run kani -->
+			<class name="aca.first.test.MyFirstWebDriverTest" />
+			<!-- afterClass run klini estex // class-ic heto -->
+		</classes>
+	</test>
+</suite>
